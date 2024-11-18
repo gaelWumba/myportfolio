@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { FC } from "react";
 
 interface IntroProps {
     isNavVisible: boolean;
