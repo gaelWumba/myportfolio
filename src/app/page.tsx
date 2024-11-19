@@ -79,6 +79,7 @@ export default function Home() {
       </section>
       <section id="contact" className="h-screen">
         <Contact textColor={textColor} bgColor={bgColor} isOpen={isNavVisible} />
+        <div className="h-10"></div>
       </section>
       <ColorPicker
         onColorChange={setBgColor}
