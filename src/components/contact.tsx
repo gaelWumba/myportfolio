@@ -55,10 +55,10 @@ export const Contact = ({ textColor, bgColor, isOpen }: { textColor: string; bgC
         </div>
       </div>
         <div>
-          <figure className={`${ isOpen ? "-z-10" : "relative" } w-fit h-fit imgIndex`} >            
+          <figure className={`${ isOpen ? "-z-10" : "relative" }`} >            
             <img
               src="/images/profil.jpg"
-              className="xs:h-fit sm:h-[100px] md:h-[400px] lg:h-[500px] xl:h-[430px] 2xl:h-[550px]"
+              className="sm:h-[100px] md:h-[400px] lg:h-[500px] xl:h-[430px] 2xl:h-[550px]"
               alt="WUMBA BUATU Gaël"
             />
             <div
