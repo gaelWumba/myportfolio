@@ -28,8 +28,8 @@ export const Contact = ({ textColor, bgColor, isOpen }: { textColor: string; bgC
         <h4 className="sm:text-base md:text-xl lg:text-2xl 2xl:text-3xl font-medium">
           • Disponible pour un poste en alternance.
         </h4>
-        <div className="xs:my-8 sm:my-8 md:my-36 lg:my-52 xl:my-44 2xl:my-56 text-transparent">d</div>
-        <div className="xs:text-[13px] sm:text-xs md:text-base lg:text-lg 2xl:text-lg font-medium flex items-center justify-between pe-4  md:py-0 lg:py-0">
+        <div className="md:my-36 lg:my-52 xl:my-44 2xl:my-56 text-transparent">d</div>
+        <div className="xs:text-[13px] sm:text-xs md:text-base lg:text-lg 2xl:text-lg font-medium flex items-center justify-between pe-4 pb-1  md:py-0 lg:py-0">
           <a
             href="mailto:g.wumbabuatu@gmail.com"
             className="hover:text-foreground border-b-2 border-foreground"
@@ -58,7 +58,7 @@ export const Contact = ({ textColor, bgColor, isOpen }: { textColor: string; bgC
           <figure className={`${ isOpen ? "-z-10" : "relative" } w-fit h-fit imgIndex`} >            
             <img
               src="/images/profil.jpg"
-              className="xs:h-[100px] sm:h-[100px] md:h-[400px] lg:h-[500px] xl:h-[430px] 2xl:h-[550px]"
+              className="xs:h-fit sm:h-[100px] md:h-[400px] lg:h-[500px] xl:h-[430px] 2xl:h-[550px]"
               alt="WUMBA BUATU Gaël"
             />
             <div
