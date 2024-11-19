@@ -20,17 +20,15 @@ export const Work = ({ textColor, bgColor, isOpen }: { textColor: string; bgColo
       </div>
       <div className="">
         <div className={`${ isOpen ? "-z-10" : "relative" } w-full h-full`} >            
-            <Image
-              src="/images/wireframe.svg"
+            <img
+              src="images/wireframe.svg"
               className="w-full"
               alt="réalisations"
-              width={0}
-              height={0}
             />
             <div
               style={{
                 backgroundColor: bgColor,
-                opacity: 0.5,
+                opacity: 0.3,
               }}
               className={`${ isOpen ? "-z-10" : ""} absolute top-0 left-0 w-full h-full mix-blend-multiply`}
             ></div>

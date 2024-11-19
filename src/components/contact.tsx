@@ -29,7 +29,7 @@ export const Contact = ({ textColor, bgColor, isOpen }: { textColor: string; bgC
           • Disponible pour un poste en alternance.
         </h4>
         <div className="sm:my-10 md:my-36 lg:my-52 xl:my-44 2xl:my-56 text-transparent">d</div>
-        <div className="xs:text-[13px] sm:text-xs md:text-base lg:text-lg 2xl:text-lg font-medium flex items-center justify-between pe-4 sm:py-3 md:py-0 lg:py-0">
+        <div className="xs:text-[13px] sm:text-xs md:text-base lg:text-lg 2xl:text-lg font-medium flex items-center justify-between pe-4  md:py-0 lg:py-0">
           <a
             href="mailto:g.wumbabuatu@gmail.com"
             className="hover:text-foreground border-b-2 border-foreground"
@@ -56,12 +56,10 @@ export const Contact = ({ textColor, bgColor, isOpen }: { textColor: string; bgC
       </div>
         <div>
           <figure className={`${ isOpen ? "-z-10" : "relative" } w-fit h-fit imgIndex`} >            
-            <Image
+            <img
               src="/images/profil.jpg"
-              className="sm:h-[100px] md:h-[400px] lg:h-[500px] xl:h-[430px] 2xl:h-[550px]"
+              className="xs:h-full sm:h-[100px] md:h-[400px] lg:h-[500px] xl:h-[430px] 2xl:h-[550px]"
               alt="WUMBA BUATU Gaël"
-              width={500}
-              height={0}
             />
             <div
               style={{
@@ -73,5 +71,6 @@ export const Contact = ({ textColor, bgColor, isOpen }: { textColor: string; bgC
           </figure>
         </div>
     </div>
+  
   );
 };
