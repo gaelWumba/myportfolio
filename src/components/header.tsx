@@ -10,13 +10,12 @@ interface HeaderProps {
   textColor: string;
 }
 
-export const Header: FC<HeaderProps> = ({ toggleNav, bgColor, textColor }) => {
+export const Header: FC<HeaderProps> = ({ toggleNav, bgColor }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const navRef = useRef<HTMLDivElement>(null);
   const linksRef = useRef<HTMLDivElement>(null);
   const hamburgerRef = useRef<HTMLButtonElement>(null);
-  const [hovered, setHovered] = useState(false);
 
   const lenisRef = useLenis();
 

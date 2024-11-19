@@ -5,7 +5,7 @@ interface IntroProps {
     isNavVisible: boolean;
   }
   
-  export const Intro: React.FC<IntroProps> = ({ isNavVisible }) => {
+  export const Intro: React.FC<IntroProps> = () => {
   
     const messages = {
       toutLeMonde: [

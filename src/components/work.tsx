@@ -1,5 +1,4 @@
-'use client';
-
+import Image from 'next/image'
 export const Work = ({ textColor, bgColor, isOpen }: { textColor: string; bgColor: string; isOpen: boolean }) => {  
 
   return (
@@ -20,18 +19,20 @@ export const Work = ({ textColor, bgColor, isOpen }: { textColor: string; bgColo
         <div className="md:hidden lg:block"></div>
       </div>
       <div className="">
-        <div className={`${ isOpen ? "hidden" : "relative" } w-full h-full`} >            
-            <img
-              src="images/wireframe.svg"
+        <div className={`${ isOpen ? "-z-10" : "relative" } w-full h-full`} >            
+            <Image
+              src="/images/wireframe.svg"
               className="w-full"
-              alt="WUMBA BUATU Gaël"
+              alt="réalisations"
+              width={0}
+              height={0}
             />
             <div
               style={{
                 backgroundColor: bgColor,
                 opacity: 0.5,
               }}
-              className="absolute top-0 left-0 w-full h-full mix-blend-multiply"
+              className={`${ isOpen ? "-z-10" : ""} absolute top-0 left-0 w-full h-full mix-blend-multiply`}
             ></div>
           </div>
         </div>

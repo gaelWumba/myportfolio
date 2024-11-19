@@ -1,6 +1,4 @@
-'use client';
-
-import { useState } from "react";
+import Image from 'next/image'
 
 export const Contact = ({ textColor, bgColor, isOpen }: { textColor: string; bgColor: string; isOpen: boolean }) => {
   return (
@@ -57,18 +55,20 @@ export const Contact = ({ textColor, bgColor, isOpen }: { textColor: string; bgC
         </div>
       </div>
         <div>
-          <figure className={`${ isOpen ? "hidden" : "relative" } w-fit h-fit imgIndex`} >            
-            <img
-              src="images/photo.jpg"
+          <figure className={`${ isOpen ? "-z-10" : "relative" } w-fit h-fit imgIndex`} >            
+            <Image
+              src="/images/profil.jpg"
               className="sm:h-[100px] md:h-[400px] lg:h-[500px] xl:h-[430px] 2xl:h-[550px]"
               alt="WUMBA BUATU Gaël"
+              width={500}
+              height={0}
             />
             <div
               style={{
                 backgroundColor: bgColor,
                 opacity: 0.5,
               }}
-              className="absolute top-0 left-0 w-full h-full mix-blend-multiply"
+              className={`${ isOpen ? "-z-10" : ""} absolute top-0 left-0 w-full h-full mix-blend-multiply`}
             ></div>
           </figure>
         </div>
