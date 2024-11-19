@@ -21,7 +21,7 @@ export const Work = ({ textColor, bgColor, isOpen }: { textColor: string; bgColo
       <div className="">
         <div className={`${ isOpen ? "-z-10" : "relative" } w-full h-full`} >            
             <img
-              src="images/wireframe.svg"
+              src="images/wireframe.png"
               className="w-full"
               alt="réalisations"
             />
