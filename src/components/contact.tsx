@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const Contact = ({ textColor, bgColor, isOpen }: { textColor: string; bgColor: string; isOpen: boolean }) => {
   return (
-    <div className="h-full grid lg:grid-cols-3 md:grid-cols-2 p-8 pt-56">
+    <div className="h-full grid lg:grid-cols-3 md:grid-cols-2 p-8 pt-52">
       <div className="md:hidden lg:block"></div>
       <div className="stroke-text">
         <p
