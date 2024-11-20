@@ -66,7 +66,7 @@ export const Contact = ({ textColor, bgColor, isOpen }: { textColor: string; bgC
                 backgroundColor: bgColor,
                 opacity: 0.5,
               }}
-              className={`${ isOpen ? "-z-10" : ""} absolute top-0 left-0 w-full h-full mix-blend-multiply`}
+              className={`${ isOpen ? "-z-10" : ""} absolute top-0 left-0 w-full h-full mix-blend-multiply transition-colors duration-500 ease-in-out`}
             ></div>
           </figure>
         </div>
